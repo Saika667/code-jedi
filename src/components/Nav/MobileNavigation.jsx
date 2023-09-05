@@ -17,13 +17,14 @@ const NavigationContainer = styled.nav`
 const NavigationItemContainer = styled.div`
     display: none;
     flex-direction: column;
-    background-color: blue;
+    background: black;
     height: 100vh;
     position: absolute;
     top: 57px;
     left: 0;
     right: 0;
     bottom: 0;
+
     &.isVisible {
       display: flex;
     }
@@ -34,12 +35,12 @@ const NavigationItem = styled.div`
     padding: .3em 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 `
 
 const ItemName = styled.h2`
     color: white;
     text-transform: uppercase;
-    padding: 0 0 0 2em;
     font-size: .62em;
     letter-spacing: 1px;
 `
@@ -50,6 +51,13 @@ const IconContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: .8em 1.2em;
+`
+
+const Separator = styled.div`
+    margin: 0.7em auto;
+    width: 15%;
+    height: 3px;
+    background-color: white;
 `
 
 function MobileNavigation() {
@@ -65,22 +73,32 @@ function MobileNavigation() {
             <ItemName>code-troopers</ItemName>
           </NavigationItem>
 
+          <Separator />
+          
           <NavigationItem>
             <ItemName>compétences</ItemName>
           </NavigationItem>
 
+          <Separator />
+          
           <NavigationItem>
             <ItemName>réalisations</ItemName>
           </NavigationItem>
 
+          <Separator />
+          
           <NavigationItem>
             <ItemName>troopers</ItemName>
           </NavigationItem>
 
+          <Separator />
+          
           <NavigationItem>
             <ItemName>contact</ItemName>
           </NavigationItem>
 
+          <Separator />
+          
           <NavigationItem>
             <ItemName>blog</ItemName>
           </NavigationItem>

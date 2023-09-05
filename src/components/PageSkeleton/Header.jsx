@@ -1,17 +1,27 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import NavigationBar from '../Nav/NavigationBar';
 import headerTrooper from '../../assets/headerBackground.webp';
 import logoTrooper from '../../assets/troopersLogo.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapPin, faFileContract, faSuitcase } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import MobileNavigation from '../Nav/MobileNavigation';
+import { GlobalContext } from '../../utils/Context';
+
+const appearanceOfTitles = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
 
 const HeaderContainer = styled.header`
     background: url(${headerTrooper}) no-repeat;
     background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     &:after {
         content: '';
@@ -35,7 +45,9 @@ const InformationContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    animation: ${appearanceOfTitles} 800ms ease-in-out forwards;
+    animation-delay: ${props => props.$animDelay};
+    opacity: 0;
     &.logo {
         padding: 3.5em 0 .8em 0;
     }
@@ -65,6 +77,9 @@ export const Separator = styled.hr`
     background-color: #6BC9E3;
     height: 5px;
     margin: 0.8em auto;
+    animation: ${appearanceOfTitles} 800ms ease-in-out forwards;
+    animation-delay: ${props => props.$animDelay};
+    opacity: 0;
 `
 
 const Image = styled.img`
@@ -104,42 +119,38 @@ const Text = styled.span`
 `
 
 function Header() {
-    const [descWidth, setDescWidth] = useState(800)
-
-    useEffect(() => {
-        setDescWidth(window.innerWidth)
-    }, [])
+    const { device } = useContext(GlobalContext)
 
   return (
     <HeaderContainer>
-        {descWidth < 768 ?
+        {device === 'mobile' ?
             <MobileNavigation />
             :
             <NavigationBar />
         }
       
       <HeaderInformations>
-        <InformationContainer className='logo'>
+        <InformationContainer className='logo' $animDelay={'0ms'}>
             <Image src={logoTrooper} />
         </InformationContainer>
 
-        <InformationContainer>
+        <InformationContainer $animDelay={'100ms'}>
             <TitlePage>À la recherche d'un nouveau Trooper</TitlePage>
         </InformationContainer>
 
-        <Separator />
+        <Separator $animDelay={'200ms'}/>
 
-        <InformationContainer>
+        <InformationContainer $animDelay={'300ms'}>
             <TitleDescPage>DÉVELOPPEUR Front et/ou Back (H/F)</TitleDescPage>
         </InformationContainer>
 
-        <Separator />
+        <Separator $animDelay={'400ms'}/>
 
-        <InformationContainer>
+        <InformationContainer $animDelay={'500ms'}>
             <TitleDescPage>Rejoins l'équipe !</TitleDescPage>
         </InformationContainer>
 
-        <InformationContainer className='infosContainer'>
+        <InformationContainer className='infosContainer' $animDelay={'600ms'}>
             <InformationElement>
                 <FontAwesomeIcon icon={faFileContract} />
                 <Text>CDI</Text>

@@ -15,18 +15,17 @@ const NavigationContainer = styled.nav`
 `
 
 const NavigationItemContainer = styled.div`
-    display: none;
-    flex-direction: column;
     background: black;
     height: 100vh;
     position: absolute;
     top: 57px;
-    left: 0;
-    right: 0;
     bottom: 0;
+    width: 100%;
+    translate: -100%;
+    transition: translate 250ms linear;
 
     &.isVisible {
-      display: flex;
+      translate: 0;
     }
 `
 
@@ -41,7 +40,7 @@ const NavigationItem = styled.div`
 const ItemName = styled.h2`
     color: white;
     text-transform: uppercase;
-    font-size: .62em;
+    font-size: 1em;
     letter-spacing: 1px;
 `
 
@@ -62,13 +61,17 @@ const Separator = styled.div`
 
 function MobileNavigation() {
     const [isVisible, setIsVisible] = useState(false)
+
     return (
       <NavigationContainer>
         <IconContainer onClick={() => setIsVisible(!isVisible)}>
             <FontAwesomeIcon icon={faBars} />
         </IconContainer>
 
-        <NavigationItemContainer className={isVisible ? 'isVisible' : ''} onClick={() => setIsVisible(!isVisible)}>
+        <NavigationItemContainer 
+          className={isVisible ? 'isVisible' : ''} 
+          onClick={() => setIsVisible(!isVisible)}
+        >
           <NavigationItem>
             <ItemName>code-troopers</ItemName>
           </NavigationItem>

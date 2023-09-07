@@ -37,7 +37,6 @@ const NavigationItem = styled.div.attrs(props => ({
       right: 0;
       background: linear-gradient(80deg, rgba(107,201,227,1) 40%, rgba(6,147,227,1) 90%);
       opacity: 0;
-
       color: white;
       text-transform: uppercase;
       text-align: center;

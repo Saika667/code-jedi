@@ -30,7 +30,6 @@ const HeaderContainer = styled.header`
         bottom: 0;
         left: 0;
         right: 0;
-        //background: rgba(107, 201, 227, 0.3);
         background: linear-gradient(0deg, rgba(25,42,61, .5) 25%, rgba(107,201,227, .3) 73%);
     }
 `
@@ -90,6 +89,10 @@ const TitlePage = styled.h1`
     font-size: 2em;
     margin: 0;
     text-align: center;
+
+    @media only screen and  (max-width: 768px) {
+        margin: 0 .5em;
+    }
 `
 
 const TitleDescPage = styled.h3`

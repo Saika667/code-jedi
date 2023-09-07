@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/code-jedi/static/js/main.418cb450.js",
+    "static/js/787.cbaa5442.chunk.js": "/code-jedi/static/js/787.cbaa5442.chunk.js",
+    "static/media/headerBackground.webp": "/code-jedi/static/media/headerBackground.8722452982a8730f6bef.webp",
+    "static/media/troopersLogo.webp": "/code-jedi/static/media/troopersLogo.3fae3a2232e353f341da.webp",
+    "index.html": "/code-jedi/index.html",
+    "main.418cb450.js.map": "/code-jedi/static/js/main.418cb450.js.map",
+    "787.cbaa5442.chunk.js.map": "/code-jedi/static/js/787.cbaa5442.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.418cb450.js"
+  ]
+}

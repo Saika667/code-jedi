@@ -4,7 +4,7 @@ import headerTrooper from '../../assets/headerBackground.webp';
 import logoTrooper from '../../assets/troopersLogo.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapPin, faFileContract, faSuitcase } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState, useContext } from 'react';
+import { useContext } from 'react';
 import MobileNavigation from '../Nav/MobileNavigation';
 import { GlobalContext } from '../../utils/Context';
 

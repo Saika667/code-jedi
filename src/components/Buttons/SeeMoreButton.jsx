@@ -38,8 +38,9 @@ const Button = styled.div`
     color: black;
     transition: 200ms;
     padding: 0;
+    user-select: none;
     cursor: pointer;
-    
+
     &:hover {
         letter-spacing: 1px;
         padding: .2em;

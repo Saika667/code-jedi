@@ -19,6 +19,7 @@ const Text = styled.span`
     text-align: center;
     font-weight: 700;
     padding: .6em 1em;
+    user-select: none;
     cursor: pointer;
 
     position: relative;

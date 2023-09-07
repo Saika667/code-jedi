@@ -3,7 +3,7 @@ import { Separator } from './Header'
 import GenericButton from '../Buttons/GenericButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapPin, faFileContract } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState, useContext } from 'react';
+import { useContext } from 'react';
 import SeeMoreButton from '../Buttons/SeeMoreButton';
 import { GlobalContext } from '../../utils/Context';
 
@@ -237,7 +237,7 @@ function Body() {
 
         <CenterContainer>
             <Paragraph>
-                Code-Troopers recherche des développeurs Front-end et / ou back-end (H/F), CDI, 35h.
+                Code-Troopers recherche des développeurs Front-end et / ou Back-end (H/F), CDI, 35h.
             </Paragraph>
 
             <Paragraph>
@@ -255,12 +255,13 @@ function Body() {
 
             <Paragraph>
                 Nous sommes une entreprise de développeurs passionnés, expérimentés, à taille humaine, qui accompagne tout type d'entreprises (pas de secteur d'activité prédéfinis), dans 
-                la réalisation de projetsinformatiques, du <Bold>conseil</Bold> au <Bold>développement</Bold> d'applications <Bold>web</Bold> et <Bold>mobiles</Bold> tout en abordant la 
+                la réalisation de projets informatiques, du <Bold>conseil</Bold> au <Bold>développement</Bold> d'applications <Bold>web</Bold> et <Bold>mobiles</Bold> tout en abordant la 
                 transformation des processus grâce à des méthodes agiles. 
             </Paragraph>
             <Paragraph>
                 Nous entreprenons également des <Bold>projets</Bold> à l'instar de <Bold>NAVIG'</Bold> (application agrégateur de données pour faciliter l'expérience voyageurs : Filbleu, 
-                TAO) et <LinkText href='https://chapi.to/' target='blank'>Chapitô</LinkText> ( générateur d'application mobile pour événement type festivals : Printemps de Bourges, Aucard, Terres du Son, Solidays, et plus de 40 autres festivals.)
+                TAO) et <LinkText href='https://chapi.to/' target='blank'>Chapitô</LinkText> ( générateur d'application mobile pour événement type festivals : Printemps de Bourges, Aucard, 
+                Terres du Son, Solidays, et plus de 40 autres festivals.)
             </Paragraph>
             <Paragraph>
                 Nous sommes aussi impliqués dans la <Bold>vie associative locale</Bold> (“l'écosystème local”, comme disent les pros) en participant et organisant des rencontres autour du 
@@ -282,7 +283,7 @@ function Body() {
             </SectionTitleContainer>
 
             <Paragraph>
-                Les locaux sont tout <Bold>neufs</Bold>, tout beaux, tout <Bold>équipés</Bold> : TV et consoles pour des pauses dej sympa, machine à café (illimité), si tu préféres le thé 
+                Les locaux sont tout <Bold>neufs</Bold>, tout beaux, tout <Bold>équipés</Bold> : TV et consoles pour des pauses dej sympa, machine à café (illimité), si tu préfères le thé 
                 y'a ce qu'il faut aussi, <Bold>babyfoot (qui sert vraiment !)</Bold>, fléchettes, bières au frais, salle de réunion, cabines téléphoniques, <Bold>patio</Bold> extérieur, 
                 barbecue, etc. 
             </Paragraph>
@@ -291,7 +292,7 @@ function Body() {
             </Paragraph>
             <Paragraph>
                 Les locaux sont très bien, mais nous sommes aussi remote friendly donc si tu préfères travailler depuis chez toi, c'est possible aussi ! <Bold>Ou faire les deux.</Bold> 
-                Comme tu veux !
+                 Comme tu veux !
             </Paragraph>
             <Paragraph>
                 Tu travailleras chez toi ou au bureau avec toute l'équipe, <Bold>pas chez le client.</Bold>
@@ -402,12 +403,12 @@ function Body() {
                 <ItemList>Des temps de <Bold>partages, apéro, teambuilding</Bold> régulier</ItemList>
                 <ItemList>Une prise en charge de la <Bold>mutuelle</Bold> complémentaire à <Bold>100%</Bold></ItemList>
                 <ItemList>Un plan <Bold>d'épargne salarial</Bold> optimisé (PERCO, PEE)</ItemList>
-                <ItemList>Des avantages sur les <Bold>resto (titres restaurant)</Bold>, les <Bold>abonnements</Bold> de <Bold>téléphones</Bold>, les <Bold>transport en commun</Bold> etc.</ItemList>
+                <ItemList>Des avantages sur les <Bold>resto (titres restaurant)</Bold>, les <Bold>abonnements</Bold> de <Bold>téléphones</Bold>, les <Bold>transports en commun</Bold> etc.</ItemList>
                 <ItemList>Une ambiance décontractée, des parties de babyfoot incroyables</ItemList>
             </List>
 
             <Paragraph>
-                Renseignements complémentaires sur ce poste développeur Front&nbsp;: <Bold>06 66 70 13 79</Bold> ou Linkedin <LinkText href='https://www.linkedin.com/in/nicolas-dauphin-moulin/' target='blank'><Bold>Nicolas Dauphin-Moulin</Bold></LinkText>
+                Renseignements complémentaires sur ce poste de développeur Front&nbsp;: <Bold>06 66 70 13 79</Bold> ou Linkedin <LinkText href='https://www.linkedin.com/in/nicolas-dauphin-moulin/' target='blank'><Bold>Nicolas Dauphin-Moulin</Bold></LinkText>
             </Paragraph>
 
             <GenericButton label={'POSTULER'} />
